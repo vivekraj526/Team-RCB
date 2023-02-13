@@ -5,7 +5,12 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/java/features/rcbTeam.feature", glue= {"stepDefinations"})
+@CucumberOptions(
+				features="src/test/java/features/rcbTeam.feature", 
+				glue= {"stepDefinations"},
+				plugin= {"pretty", "html:target/cucumber-reports.html"},
+				monochrome = true
+				)
 public class TestRunner {
 	
 
