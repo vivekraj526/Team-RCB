@@ -1,6 +1,6 @@
 # Team-RCB
-> This is API Automation project. Royal Challengers Bangalore Cricket team has their players details in Json File, which is mocking the API. 
-> Her we are Validating some useful results on Team Players using Maven, BDD-Cucumber and RestAssured Library.
+> This is API Automation project. Royal Challengers Bangalore Cricket team has their players details added to JSON using POJO Serialization concept, which is acting as mock API. 
+> Here we are Validating some useful results on Team Players using Maven, BDD-Cucumber and RestAssured Library.
 
 ## JARs Consumed in Project
 >
