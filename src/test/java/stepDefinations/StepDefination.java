@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.path.json.JsonPath;
 import mockAPI.TeamRCB;
+import pojo.LoadRCBTeam;
 
 public class StepDefination {
 
@@ -20,7 +21,8 @@ public class StepDefination {
 
 	@Given("User hit the RCB Team Mock API")
 	public void user_hit_the_rcb_team_mock_api() {
-		response = TeamRCB.AddRCBPlayers();
+		LoadRCBTeam team = new LoadRCBTeam();
+		response = team.response();
 	}
 
 	@When("User count the total players in Team")
